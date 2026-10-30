@@ -1,1 +1,401 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça a 62.005.428 Lucas Araujo da Conceicao, empresa de São Luís–MA com atividade de fabricação de móveis com predominância de madeira. Entre em contato.">
+  <meta name="theme-color" content="#172a24">
+  <title>62.005.428 Lucas Araujo da Conceicao | Móveis em Madeira</title>
+
+  <!-- Bootstrap 5 e Bootstrap Icons via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --forest: #172a24;
+      --forest-2: #233d33;
+      --sage: #a9b9a4;
+      --cream: #f6f3eb;
+      --paper: #fffdf8;
+      --wood: #c88d5a;
+      --ink: #1c2823;
+      --muted: #69756e;
+      --line: rgba(23, 42, 36, .13);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; }
+    h1,h2,h3,h4,.navbar-brand { font-family: "Manrope", sans-serif; letter-spacing: -.035em; }
+    a { text-decoration: none; }
+    .section-pad { padding: 100px 0; }
+    .eyebrow { display: inline-flex; gap: 9px; align-items: center; color: #8a5c36; font-size: .77rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .eyebrow:before { content: ""; width: 26px; height: 2px; background: var(--wood); }
+    .section-title { font-size: clamp(2.1rem, 4vw, 3.65rem); line-height: 1.08; font-weight: 800; max-width: 760px; }
+    .section-copy { color: var(--muted); font-size: 1.05rem; line-height: 1.8; max-width: 650px; }
+    .btn-main { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--wood); color: #20180f; border: 1px solid var(--wood); border-radius: 999px; padding: 14px 23px; font-weight: 800; transition: .25s ease; }
+    .btn-main:hover { background: #d9a575; border-color: #d9a575; color: #20180f; transform: translateY(-2px); }
+    .btn-outline-light-custom { border: 1px solid rgba(255,255,255,.5); color: white; border-radius: 999px; padding: 13px 22px; font-weight: 700; transition: .25s; }
+    .btn-outline-light-custom:hover { color: var(--forest); background: white; }
+    .navbar { background: rgba(255,253,248,.94); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(23,42,36,.07); }
+    .navbar-brand { font-weight: 800; color: var(--forest); font-size: 1.08rem; display: flex; gap: 10px; align-items: center; }
+    .brand-mark { width: 39px; height: 39px; border-radius: 13px; display: grid; place-items: center; color: var(--cream); background: var(--forest); font-size: 1.1rem; }
+    .nav-link { color: #34443b; font-weight: 600; font-size: .92rem; margin: 0 5px; }
+    .nav-link:hover { color: #9a673e; }
+    .hero { min-height: 690px; display: flex; align-items: center; position: relative; isolation: isolate; overflow: hidden; color: white; background: var(--forest); }
+    .hero:before { content: ""; position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgba(15,31,25,.94) 0%, rgba(15,31,25,.78) 48%, rgba(15,31,25,.2) 100%), url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85") center/cover; }
+    .hero:after { content: ""; position: absolute; z-index: -1; width: 470px; height: 470px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; right: -100px; bottom: -220px; box-shadow: 0 0 0 55px rgba(255,255,255,.035), 0 0 0 110px rgba(255,255,255,.025); }
+    .hero-content { padding: 130px 0 110px; }
+    .hero .eyebrow { color: #e4c09c; }
+    .hero h1 { font-size: clamp(2.8rem, 6vw, 5.6rem); font-weight: 800; line-height: 1.01; max-width: 780px; margin: 24px 0; }
+    .hero h1 span { color: #dfb58c; }
+    .hero p { max-width: 590px; color: rgba(255,255,255,.8); font-size: 1.12rem; line-height: 1.8; }
+    .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: rgba(255,255,255,.76); font-size: .9rem; }
+    .hero-note i { color: #dfb58c; font-size: 1.15rem; }
+    .trust-strip { background: var(--cream); border-bottom: 1px solid var(--line); }
+    .trust-item { display: flex; align-items: center; gap: 14px; padding: 25px 10px; height: 100%; }
+    .trust-icon { width: 48px; height: 48px; flex: 0 0 48px; display: grid; place-items: center; border-radius: 15px; background: white; color: #8b5d39; font-size: 1.25rem; }
+    .trust-item strong { display: block; font-size: .98rem; }
+    .trust-item small { color: var(--muted); }
+    .about-image-wrap { position: relative; padding: 0 28px 28px 0; }
+    .about-image { width: 100%; height: 520px; object-fit: cover; border-radius: var(--radius); display: block; }
+    .image-stamp { position: absolute; right: 0; bottom: 0; width: min(235px, 70%); padding: 22px; background: var(--forest); color: white; border-radius: 18px; box-shadow: 0 20px 40px rgba(23,42,36,.18); }
+    .image-stamp i { color: #dfb58c; font-size: 1.5rem; }
+    .image-stamp strong { display: block; font-family: Manrope; font-size: 1.12rem; margin: 10px 0 4px; }
+    .image-stamp small { color: rgba(255,255,255,.7); line-height: 1.5; }
+    .feature-list { list-style: none; padding: 0; margin: 28px 0 32px; }
+    .feature-list li { display: flex; gap: 12px; align-items: flex-start; margin: 15px 0; color: #35453c; }
+    .feature-list i { color: #8b5d39; font-size: 1.1rem; margin-top: 2px; }
+    .products-section { background: var(--cream); }
+    .product-card { height: 100%; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: transform .3s, box-shadow .3s; }
+    .product-card:hover { transform: translateY(-7px); box-shadow: 0 22px 50px rgba(23,42,36,.09); }
+    .product-card img { width: 100%; height: 255px; object-fit: cover; display: block; }
+    .product-card-body { padding: 25px; }
+    .product-icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 14px; color: #8b5d39; background: #f0e3d5; font-size: 1.2rem; margin-bottom: 18px; }
+    .product-card h3 { font-size: 1.3rem; font-weight: 800; }
+    .product-card p { color: var(--muted); line-height: 1.7; margin: 0; }
+    .statement { background: var(--forest); color: white; position: relative; overflow: hidden; }
+    .statement:after { content: "“"; position: absolute; right: 6%; top: -120px; font: 400 30rem Georgia, serif; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none; }
+    .statement .section-title { max-width: 900px; }
+    .statement p { color: rgba(255,255,255,.7); max-width: 650px; line-height: 1.8; }
+    .values-card { border-top: 1px solid rgba(255,255,255,.2); padding-top: 22px; margin-top: 45px; }
+    .values-card i { font-size: 1.4rem; color: #dfb58c; }
+    .values-card strong { display: block; margin: 13px 0 5px; }
+    .values-card span { color: rgba(255,255,255,.67); font-size: .92rem; line-height: 1.6; }
+    .contact-section { background: #f0ece2; }
+    .contact-panel { background: var(--paper); border-radius: 26px; padding: clamp(25px, 4vw, 48px); box-shadow: 0 15px 50px rgba(23,42,36,.05); height: 100%; }
+    .contact-row { display: flex; gap: 15px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .contact-row:last-child { border-bottom: 0; }
+    .contact-row > i { width: 45px; height: 45px; display: grid; place-items: center; flex: 0 0 45px; background: var(--cream); color: #8b5d39; border-radius: 14px; font-size: 1.2rem; }
+    .contact-row small { display: block; color: var(--muted); margin-bottom: 4px; }
+    .contact-row a, .contact-row strong { color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
+    .map-frame { width: 100%; min-height: 470px; height: 100%; border: 0; border-radius: 26px; display: block; background: #e2e5dd; }
+    .legal-section { background: var(--paper); }
+    .accordion-item { border: 1px solid var(--line); border-radius: 15px !important; overflow: hidden; margin-bottom: 12px; background: white; }
+    .accordion-button { padding: 22px; font-family: Manrope; font-weight: 800; color: var(--forest); background: white; box-shadow: none !important; }
+    .accordion-button:not(.collapsed) { color: var(--forest); background: var(--cream); }
+    .accordion-body { color: #5b675f; line-height: 1.8; padding: 22px; }
+    .accordion-body h4 { color: var(--forest); font-size: 1rem; font-weight: 800; margin-top: 20px; }
+    footer { background: #102019; color: white; padding: 70px 0 24px; }
+    footer .footer-brand { font-family: Manrope; font-weight: 800; font-size: 1.2rem; }
+    footer p, footer li, footer .footer-muted { color: rgba(255,255,255,.65); line-height: 1.8; font-size: .92rem; }
+    footer h3 { font-size: 1rem; font-weight: 800; margin-bottom: 20px; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: 8px 0; }
+    footer a { color: rgba(255,255,255,.82); }
+    footer a:hover { color: #dfb58c; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.13); margin-top: 45px; padding-top: 22px; }
+    .whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 1030; width: 58px; height: 58px; display: grid; place-items: center; border-radius: 50%; color: white; background: #218c58; box-shadow: 0 12px 30px rgba(0,0,0,.22); font-size: 1.7rem; transition: .2s; }
+    .whatsapp-float:hover { color: white; transform: translateY(-4px); }
+    .back-top { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,.1); }
+    @media (max-width: 767.98px) {
+      .section-pad { padding: 72px 0; }
+      .hero { min-height: auto; }
+      .hero:before { background: linear-gradient(90deg, rgba(15,31,25,.92), rgba(15,31,25,.68)), url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80") center/cover; }
+      .hero-content { padding: 115px 0 85px; }
+      .about-image { height: 390px; }
+      .map-frame { min-height: 350px; }
+      .trust-item { padding: 15px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegação principal">
+    <div class="container py-2">
+      <a class="navbar-brand" href="#inicio" aria-label="Página inicial">
+        <span class="brand-mark"><i class="bi bi-tree"></i></span>
+        <span>Lucas Araujo <small class="d-block fw-normal text-secondary" style="font-size:.66rem;letter-spacing:.02em">Móveis em madeira</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#empresa">A empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-main py-2" href="#contato">Fale conosco <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8">
+            <span class="eyebrow">Fabricação de móveis em madeira</span>
+            <h1>Madeira com propósito. <span>Espaços com identidade.</span></h1>
+            <p>A 62.005.428 Lucas Araujo da Conceicao atua no segmento de fabricação de móveis com predominância de madeira, em São Luís, Maranhão. Conheça a empresa e entre em contato para conversar sobre sua necessidade.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn-main" href="https://wa.me/5598985522892" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Conversar pelo WhatsApp</a>
+              <a class="btn-outline-light-custom" href="#solucoes">Conheça a atividade <i class="bi bi-arrow-down-right ms-1"></i></a>
+            </div>
+            <div class="hero-note"><i class="bi bi-geo-alt"></i><span>Empresa localizada em São Luís · Maranhão</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Informações da empresa">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4"><div class="trust-item"><span class="trust-icon"><i class="bi bi-building"></i></span><div><strong>Empresa registrada</strong><small>CNPJ informado no site</small></div></div></div>
+          <div class="col-md-4"><div class="trust-item"><span class="trust-icon"><i class="bi bi-hammer"></i></span><div><strong>Atividade principal</strong><small>Fabricação de móveis de madeira</small></div></div></div>
+          <div class="col-md-4"><div class="trust-item"><span class="trust-icon"><i class="bi bi-geo-alt"></i></span><div><strong>Atendimento em São Luís</strong><small>Maranhão · Brasil</small></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="empresa">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image-wrap">
+              <img class="about-image" src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1100&q=85" alt="Ambiente contemporâneo com móveis e acabamentos em madeira" loading="lazy">
+              <div class="image-stamp"><i class="bi bi-flower1"></i><strong>Design que acolhe</strong><small>Materiais, formas e ambientes pensados para o dia a dia.</small></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="eyebrow">Sobre a empresa</span>
+            <h2 class="section-title mt-3 mb-4">O valor da madeira está nos detalhes.</h2>
+            <p class="section-copy">A <strong>62.005.428 Lucas Araujo da Conceicao</strong> é uma empresa sediada em São Luís, Maranhão, cuja atividade principal registrada é a fabricação de móveis com predominância de madeira (CNAE 31.01-2-00).</p>
+            <p class="section-copy">Nosso site apresenta a atividade da empresa e oferece um canal direto para quem deseja tirar dúvidas e conversar sobre móveis e necessidades de mobiliário.</p>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Atuação definida:</strong> fabricação de móveis com predominância de madeira.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Contato direto:</strong> canais de telefone, WhatsApp e e-mail disponíveis nesta página.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Presença local:</strong> endereço empresarial em São Luís, Maranhão.</span></li>
+            </ul>
+            <a class="btn-main" href="#contato">Entre em contato <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad products-section" id="solucoes">
+      <div class="container">
+        <div class="row align-items-end mb-5 g-3">
+          <div class="col-lg-8">
+            <span class="eyebrow">Atividade e possibilidades</span>
+            <h2 class="section-title mt-3 mb-0">Mobiliário para dar forma às suas ideias.</h2>
+          </div>
+          <div class="col-lg-4"><p class="section-copy mb-0">Veja algumas categorias de mobiliário relacionadas ao segmento. A disponibilidade, os materiais, as medidas, os prazos e os valores devem ser confirmados diretamente com a empresa.</p></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=900&q=80" alt="Mesa de madeira em ambiente de trabalho" loading="lazy">
+              <div class="product-card-body"><div class="product-icon"><i class="bi bi-columns-gap"></i></div><h3>Mesas e superfícies</h3><p>Referências de mobiliário para apoiar atividades cotidianas em ambientes residenciais ou profissionais.</p></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Quarto com mobiliário de estilo natural" loading="lazy">
+              <div class="product-card-body"><div class="product-icon"><i class="bi bi-house-heart"></i></div><h3>Móveis para ambientes</h3><p>Inspirações para compor espaços com funcionalidade, harmonia visual e materiais de aparência natural.</p></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Detalhes de mobiliário e decoração contemporânea" loading="lazy">
+              <div class="product-card-body"><div class="product-icon"><i class="bi bi-rulers"></i></div><h3>Detalhes e acabamentos</h3><p>Converse com a empresa para esclarecer opções de medidas, características e acabamentos disponíveis.</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-5"><a class="btn-main" href="https://wa.me/5598985522892" target="_blank" rel="noopener noreferrer"><i class="bi bi-chat-dots"></i> Consultar pelo WhatsApp</a></div>
+      </div>
+    </section>
+
+    <section class="section-pad statement">
+      <div class="container position-relative">
+        <span class="eyebrow">Nosso compromisso</span>
+        <h2 class="section-title mt-3 mb-4">Um bom projeto começa com uma conversa clara.</h2>
+        <p>Quer saber mais sobre a empresa ou consultar uma necessidade de mobiliário? Entre em contato pelos canais informados. Nossa equipe poderá orientar você sobre as informações disponíveis para cada solicitação.</p>
+        <div class="row g-4">
+          <div class="col-md-4"><div class="values-card"><i class="bi bi-chat-square-text"></i><strong>Comunicação direta</strong><span>Um canal simples para esclarecer dúvidas e alinhar informações.</span></div></div>
+          <div class="col-md-4"><div class="values-card"><i class="bi bi-rulers"></i><strong>Atenção à necessidade</strong><span>Detalhes e requisitos podem ser conversados antes de qualquer contratação.</span></div></div>
+          <div class="col-md-4"><div class="values-card"><i class="bi bi-geo-alt"></i><strong>Presença local</strong><span>Endereço empresarial informado em São Luís, no estado do Maranhão.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad contact-section" id="contato">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <span class="eyebrow">Fale conosco</span>
+            <h2 class="section-title mt-3 mb-3">Vamos conversar?</h2>
+            <p class="section-copy mb-4">Use um dos canais abaixo para entrar em contato com a empresa, solicitar informações ou esclarecer dúvidas.</p>
+            <div class="contact-panel">
+              <div class="contact-row"><i class="bi bi-whatsapp"></i><div><small>WhatsApp / Telefone</small><a href="https://wa.me/5598985522892" target="_blank" rel="noopener noreferrer">(98) 98552-2892</a></div></div>
+              <div class="contact-row"><i class="bi bi-envelope"></i><div><small>E-mail</small><a href="mailto:yurigomesmacedodantassilvacost@gmail.com">yurigomesmacedodantassilvacost@gmail.com</a></div></div>
+              <div class="contact-row"><i class="bi bi-geo-alt"></i><div><small>Endereço</small><strong>Rua das Flores, 100, Galpão, Centro</strong><div class="text-secondary small mt-1">São Luís – MA · CEP 65010-230</div></div></div>
+              <div class="contact-row"><i class="bi bi-clock"></i><div><small>Atendimento</small><strong>Consulte a disponibilidade por telefone ou e-mail</strong></div></div>
+            </div>
+          </div>
+          <div class="col-lg-7" id="localizacao">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+              <div><span class="eyebrow">Como chegar</span><h3 class="h4 fw-bold mt-2 mb-0">Nossa localização</h3></div>
+              <a class="btn btn-outline-dark rounded-pill px-3" href="https://www.google.com/maps/search/?api=1&query=Rua+das+Flores%2C+100%2C+Centro%2C+S%C3%A3o+Lu%C3%ADs%2C+MA%2C+65010-230" target="_blank" rel="noopener noreferrer">Abrir no Google Maps <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+            </div>
+            <iframe class="map-frame" title="Mapa da localização informada da empresa em São Luís, Maranhão" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20das%20Flores%2C%20100%2C%20Centro%2C%20S%C3%A3o%20Lu%C3%ADs%2C%20MA%2C%2065010-230&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+            <p class="small text-secondary mt-3 mb-0"><i class="bi bi-info-circle me-1"></i> O mapa utiliza o endereço informado. Confirme o ponto exato e a possibilidade de visita antes de se deslocar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad legal-section" id="informacoes-legais">
+      <div class="container">
+        <div class="mb-5">
+          <span class="eyebrow">Transparência</span>
+          <h2 class="section-title mt-3 mb-3">Informações e políticas do site</h2>
+          <p class="section-copy">Consulte as informações institucionais, a política de privacidade e os termos de uso. Os documentos abaixo fazem parte desta mesma página.</p>
+        </div>
+        <div class="accordion" id="legalAccordion">
+          <div class="accordion-item" id="sobre">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#legalAbout" aria-expanded="true" aria-controls="legalAbout"><i class="bi bi-building me-3"></i> Sobre a empresa</button></h3>
+            <div id="legalAbout" class="accordion-collapse collapse show" data-bs-parent="#legalAccordion"><div class="accordion-body">
+              <p>A <strong>62.005.428 Lucas Araujo da Conceicao</strong>, inscrita no CNPJ sob o nº <strong>62.005.428/0001-84</strong>, informa como atividade principal a fabricação de móveis com predominância de madeira, CNAE 31.01-2-00. Conforme os dados fornecidos para este site, a empresa foi aberta em 31/07/2025 e está localizada em São Luís, Maranhão.</p>
+              <p><strong>Endereço:</strong> Rua das Flores, 100, Galpão, Centro, São Luís – MA, CEP 65010-230.</p>
+              <p><strong>Contato:</strong> (98) 98552-2892 · yurigomesmacedodantassilvacost@gmail.com.</p>
+              <p class="mb-0">As informações sobre disponibilidade de produtos, especificações, condições comerciais, prazos e valores devem ser confirmadas diretamente com a empresa.</p>
+            </div></div>
+          </div>
+          <div class="accordion-item" id="politica-de-privacidade">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legalPrivacy" aria-expanded="false" aria-controls="legalPrivacy"><i class="bi bi-shield-lock me-3"></i> Política de Privacidade</button></h3>
+            <div id="legalPrivacy" class="accordion-collapse collapse" data-bs-parent="#legalAccordion"><div class="accordion-body">
+              <p><strong>Última atualização: 27 de outubro de 2026.</strong></p>
+              <p>A 62.005.428 Lucas Araujo da Conceicao respeita a privacidade dos visitantes deste site e busca tratar dados pessoais com transparência, de acordo com a legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 – LGPD).</p>
+              <h4>1. Dados que podem ser tratados</h4>
+              <p>Este site é institucional e não possui formulário próprio de cadastro nesta versão. Se você entrar em contato por telefone, WhatsApp ou e-mail, poderemos receber os dados que decidir compartilhar, como nome, telefone, endereço de e-mail e conteúdo da mensagem, para responder à solicitação e dar continuidade ao atendimento.</p>
+              <h4>2. Finalidades e bases legais</h4>
+              <p>Os dados de contato poderão ser utilizados para responder dúvidas, tratar solicitações e manter comunicações relacionadas ao atendimento. O tratamento será realizado conforme a base legal aplicável a cada situação, como procedimentos preliminares relacionados a contrato, execução de contrato, cumprimento de obrigação legal ou legítimo interesse, quando cabível.</p>
+              <h4>3. Compartilhamento e serviços de terceiros</h4>
+              <p>Não comercializamos dados pessoais. Ao usar links de WhatsApp, e-mail ou Google Maps, você poderá acessar serviços operados por terceiros, que possuem suas próprias políticas e práticas de privacidade. O site também carrega bibliotecas e fontes externas (Bootstrap, Bootstrap Icons e Google Fonts), que podem receber informações técnicas da conexão. Consulte as políticas dos respectivos fornecedores.</p>
+              <h4>4. Cookies, anúncios e medição</h4>
+              <p>Esta versão do site não instala intencionalmente um sistema próprio de cookies de publicidade ou análise. Caso sejam adicionadas ferramentas como Google Analytics, Google Ads, tags de conversão, pixels ou outros mecanismos de medição, esta política deverá ser atualizada e os consentimentos ou avisos necessários deverão ser implementados, conforme a legislação aplicável e as configurações utilizadas.</p>
+              <h4>5. Segurança e retenção</h4>
+              <p>São adotadas medidas razoáveis e proporcionais para proteger as informações recebidas. Os dados serão mantidos pelo período necessário para atender à finalidade da comunicação ou cumprir obrigações legais, regulatórias e para exercício regular de direitos, quando aplicável.</p>
+              <h4>6. Seus direitos</h4>
+              <p>Nos termos da LGPD e conforme aplicável, você pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio, eliminação ou informações sobre compartilhamento, além de exercer outros direitos previstos em lei. A análise poderá exigir confirmação de identidade para evitar acesso indevido.</p>
+              <h4>7. Como entrar em contato</h4>
+              <p>Para dúvidas ou solicitações relacionadas à privacidade, entre em contato pelo e-mail <a href="mailto:yurigomesmacedodantassilvacost@gmail.com">yurigomesmacedodantassilvacost@gmail.com</a> ou telefone (98) 98552-2892.</p>
+              <p class="mb-0"><strong>Importante:</strong> revise este texto antes da publicação para confirmar os fluxos reais de dados, serviços instalados, ferramentas de anúncios e procedimentos internos da empresa.</p>
+            </div></div>
+          </div>
+          <div class="accordion-item" id="termos-de-uso">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legalTerms" aria-expanded="false" aria-controls="legalTerms"><i class="bi bi-file-earmark-text me-3"></i> Termos de Uso</button></h3>
+            <div id="legalTerms" class="accordion-collapse collapse" data-bs-parent="#legalAccordion"><div class="accordion-body">
+              <p><strong>Última atualização: 27 de outubro de 2026.</strong></p>
+              <h4>1. Aceitação</h4>
+              <p>Ao acessar este site, você concorda com estes Termos de Uso. Se não concordar, recomendamos que interrompa a navegação.</p>
+              <h4>2. Finalidade do site</h4>
+              <p>O site tem finalidade institucional e informativa: apresentar a empresa, sua atividade principal e seus canais de contato. O conteúdo não constitui, por si só, proposta comercial, orçamento, promessa de disponibilidade ou contrato de fornecimento.</p>
+              <h4>3. Informações e imagens</h4>
+              <p>Buscamos manter as informações claras e atualizadas, mas dados, imagens ilustrativas e descrições podem ser alterados. As imagens de ambientes e mobiliário nesta página são ilustrativas e não devem ser interpretadas como catálogo confirmado de produtos fabricados ou disponíveis pela empresa. Confirme especificações, materiais, medidas, preços, prazos e condições diretamente com a empresa antes de contratar.</p>
+              <h4>4. Uso permitido</h4>
+              <p>Você concorda em utilizar o site de forma lícita, sem tentar prejudicar seu funcionamento, violar direitos de terceiros ou utilizar o conteúdo para fins fraudulentos.</p>
+              <h4>5. Links externos</h4>
+              <p>O site pode conter links para serviços de terceiros, como WhatsApp e Google Maps. A empresa não controla integralmente esses serviços nem suas políticas, disponibilidade ou conteúdos externos.</p>
+              <h4>6. Propriedade intelectual</h4>
+              <p>Os elementos próprios do site, quando existentes, são protegidos pela legislação aplicável. Marcas, bibliotecas, fotografias e recursos de terceiros pertencem aos respectivos titulares e são utilizados conforme suas licenças e condições.</p>
+              <h4>7. Limitação e atualização</h4>
+              <p>O site é disponibilizado conforme sua disponibilidade técnica. Na extensão permitida pela legislação, a empresa não garante funcionamento ininterrupto nem ausência de erros em serviços de terceiros. Estes termos podem ser atualizados para refletir mudanças no site ou nas obrigações legais.</p>
+              <h4>8. Legislação e contato</h4>
+              <p>Estes termos são interpretados de acordo com a legislação brasileira, respeitados os direitos obrigatórios do consumidor quando aplicáveis. Para dúvidas, entre em contato pelo e-mail <a href="mailto:yurigomesmacedodantassilvacost@gmail.com">yurigomesmacedodantassilvacost@gmail.com</a> ou pelo telefone (98) 98552-2892.</p>
+              <p class="mb-0">A utilização deste site não substitui a formalização de orçamento, pedido ou contrato específico quando necessário.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="#inicio" class="d-inline-flex align-items-center gap-2 text-white mb-3"><span class="brand-mark"><i class="bi bi-tree"></i></span><span class="footer-brand">Lucas Araujo</span></a>
+          <p>62.005.428 Lucas Araujo da Conceicao. Empresa com atividade principal de fabricação de móveis com predominância de madeira, em São Luís – MA.</p>
+          <a href="https://wa.me/5598985522892" target="_blank" rel="noopener noreferrer" class="btn-main mt-2"><i class="bi bi-whatsapp"></i> Entre em contato</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#empresa">Sobre a empresa</a></li>
+            <li><a href="#solucoes">Atividade e soluções</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#politica-de-privacidade">Política de Privacidade</a></li>
+            <li><a href="#termos-de-uso">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-5">
+          <h3>Dados da empresa</h3>
+          <ul>
+            <li><strong class="text-white">Razão social:</strong> 62.005.428 Lucas Araujo da Conceicao</li>
+            <li><strong class="text-white">CNPJ:</strong> 62.005.428/0001-84</li>
+            <li><strong class="text-white">CNAE principal:</strong> 31.01-2-00 — Fabricação de móveis com predominância de madeira</li>
+            <li><strong class="text-white">Endereço:</strong> Rua das Flores, 100, Galpão, Centro</li>
+            <li>São Luís – Maranhão · CEP 65010-230</li>
+            <li><strong class="text-white">Telefone/WhatsApp:</strong> <a href="tel:+5598985522892">(98) 98552-2892</a></li>
+            <li><strong class="text-white">E-mail:</strong> <a href="mailto:yurigomesmacedodantassilvacost@gmail.com">yurigomesmacedodantassilvacost@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <span class="footer-muted small">© <span id="currentYear">2026</span> 62.005.428 Lucas Araujo da Conceicao. Todos os direitos reservados.</span>
+        <a href="#inicio" class="back-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5598985522892" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Fecha o menu móvel após a seleção de uma seção.
+    document.querySelectorAll('#mainNav .nav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        const nav = document.getElementById('mainNav');
+        if (nav.classList.contains('show')) {
+          bootstrap.Collapse.getOrCreateInstance(nav).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
 
